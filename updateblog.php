@@ -6,6 +6,11 @@
     header("Location: login.php");
     return;
   }
+  if(!isset($_GET['id']))
+  {
+    header("Location:modifyblog.php");
+    return;
+  }
   if(isset($_POST['title']))//&&isset($_POST['description'])&&isset($_POST['url'])&&isset($_FILE['image']))
   {
     $fname = rand(1,1000000);
@@ -13,16 +18,22 @@
     $newfile = $fname.'.'.$file_ext;
     $_POST['publish_date']=date('y-m-d',strtotime($_POST['publish_date']));
     move_uploaded_file($_FILES['image']['tmp_name'],"uploads/".$fname.'.'.$file_ext);
-    $query = $pdo->prepare("INSERT INTO blog( `title`, `description`, `author`, `publish_date`, `url`, `image`) VALUES (:title,:description,:author,:publish_date,:url,:images)");
+    $query = $pdo->prepare("UPDATE blog SET title=:title,description=:description,author=:author,publish_date=:publish_date,url=:url,image=:images WHERE uid = :uid");
     $query -> execute(array(
       ':title' => $_POST['title'],
       ':description' => $_POST['description'],
       ':author' => $_POST['author_name'],
       ':publish_date'=>$_POST['publish_date'],
       ':url'=>$_POST['url'],
-      ':images'=>$newfile
+      ':images'=>$newfile,
+      ':uid'=>$_GET['id']
     ));
-    echo ('BLOG SUCCESSFULLY ADDED');
+    die ('BLOG SUCCESSFULLY Updated');
+  }
+  else {
+    $query = $pdo->prepare("SELECT * FROM blog WHERE uid = :uid");
+    $query->execute(array(":uid"=>$_GET['id']));
+    $blogs = $query ->fetch(PDO::FETCH_ASSOC);
   }
 
 ?>
@@ -140,13 +151,13 @@
   <!--Form for adding blog starts-->
   <section class="blog-section">
     <form method="post" enctype="multipart/form-data">
-      <div class="col-xs-6 col-xs-offset-6">Blog Title:</div><input type="text" name="title" class="col-xs-9 col-xs-offset-1" required>
-      <div class="col-xs-6 col-xs-offset-6 clear-fix">Blog Description:</div><input type="text" name="description" class="col-xs-9 col-xs-offset-1" required>
-      <div class="col-xs-6 col-xs-offset-6 clear-fix">Author Name:</div><input type="text" name="author_name" class="col-xs-9 col-xs-offset-1">
-      <div class="col-xs-6 col-xs-offset-6 clear-fix">Publish Date:</div><input type="date" name="publish_date" class="col-xs-9 col-xs-offset-1">
-      <div class="col-xs-6 col-xs-offset-6 clear-fix">Blog URL:</div><input type="text" name="url" class="col-xs-9 col-xs-offset-1" required>
-      <div class="col-xs-6 col-xs-offset-6 clear-fix">Image:</div><input type="file" name="image" class="col-xs-9 col-xs-offset-1" required>
-      <div class="col-xs-6 col-xs-offset-5 clear-fix"><input type="submit" class="col-xs-9 col-xs-offset-1"value="Add Blog"></div>
+      <div class="col-xs-6 col-xs-offset-6">Blog Title:</div><input type="text" value = "<?php echo $blogs['title'];?>" name="title" class="col-xs-9 col-xs-offset-1" required>
+      <div class="col-xs-6 col-xs-offset-6 clear-fix">Blog Description:</div><input type="text" value = "<?php echo $blogs['description'];?>" name="description" class="col-xs-9 col-xs-offset-1" required>
+      <div class="col-xs-6 col-xs-offset-6 clear-fix">Author Name:</div><input type="text" value = "<?php echo $blogs['author'];?>" name="author_name" class="col-xs-9 col-xs-offset-1">
+      <div class="col-xs-6 col-xs-offset-6 clear-fix">Publish Date:</div><input type="date" value = "<?php echo $blogs['publish_date'];?>" name="publish_date" class="col-xs-9 col-xs-offset-1">
+      <div class="col-xs-6 col-xs-offset-6 clear-fix">Blog URL:</div><input type="text" value = "<?php echo $blogs['url'];?>" name="url" class="col-xs-9 col-xs-offset-1" required>
+      <div class="col-xs-6 col-xs-offset-6 clear-fix">Image:</div><input type="file" value = "<?php echo $blogs['image'];?>" name="image"  class="col-xs-9 col-xs-offset-1" required>
+      <div class="col-xs-6 col-xs-offset-5 clear-fix"><input type="submit" class="col-xs-9 col-xs-offset-1"value="Update Blog"></div>
     </form>
   </section>
   <!--For for adding blog ends-->

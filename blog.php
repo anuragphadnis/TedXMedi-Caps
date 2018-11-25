@@ -1,4 +1,7 @@
-blog.php<!DOCTYPE html>
+<?php
+  require_once("pdo.php");
+?>
+<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
@@ -50,7 +53,8 @@ blog.php<!DOCTYPE html>
 
   <!-- Color skin -->
   <link rel="stylesheet" href=" res/css/color_red.css">
-
+ <!--blog-->
+  <link rel="stylesheet" href="res/css/blog.css">
   <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 8]>
   <script src=" res/js/modernizr.min.js"></script>
@@ -84,8 +88,8 @@ blog.php<!DOCTYPE html>
             <li><a href="index.html#about" class="line-height-unset">About</a></li>
             <li><a href="speakers.html" class="page-scroll">Speakers</a></li>
             <li><a href="team.html" class="line-height-unset">Our Team</a></li>
-            <li><a href="blog.php" class="line-height-unset">Blogs</a></li>
-            <li><a href="#page-top" class="line-height-unset">Videos</a></li>
+            <li><a href="#page-top" class="line-height-unset">Blogs</a></li>
+            <li><a href="video.html" class="line-height-unset">Videos</a></li>
             <li><a href="sponsors.html" class="line-height-unset">Sponsors</a></li>
 
             <li class="bg-base-color">
@@ -103,7 +107,62 @@ blog.php<!DOCTYPE html>
   </nav>
   <!-- //Navigation End -->
 
+ <!--// blog start-->
+ <section class="blog-section">
+ <?php
+ $query = $pdo->query("SELECT * FROM blog");
+ $i=0;
+ while($blogs = $query->fetch(PDO::FETCH_ASSOC))
+ {
+   if($i==0)
+   {
+     ?>
+     <div class="blog-card">
+        <div class="meta">
+          <div class="photo" style="background-image: url(<?php echo 'uploads/'.$blogs['image'];?>)"></div>
+          <ul class="details">
+            <li class="author"><a href="#"><?php echo $blogs['author']; ?></a></li>
+            <li class="date"><?php echo $blogs['publish_date']; ?></li>
+          </ul>
+        </div>
+        <div class="description">
+          <h1><?php echo $blogs['title']; ?></h1>
+          <p> <?php echo $blogs['description'];?></p>
+          <p class="read-more">
+            <a href="<?php echo $blogs['url'];?>">Read More</a>
+          </p>
+        </div>
+      </div>
+      <?php
+      $i=1;
+   }
+   else {
+      ?>
+      <div class="blog-card alt">
+        <div class="meta">
+          <div class="photo" style="background-image: url(<?php echo 'uploads/'.$blogs['image'];?>)"></div>
+          <ul class="details">
+            <li class="author"><a href="#"><?php echo $blogs['author']; ?></a></li>
+            <li class="date"><?php echo $blogs['publish_date']; ?></li>
+          </ul>
+        </div>
+        <div class="description">
+          <h1><?php echo $blogs['title']; ?></h1>
+          <p> <?php echo $blogs['description'];?></p>
+          <p class="read-more">
+            <a href="<?php echo $blogs['url'];?>">Read More</a>
+          </p>
+        </div>
+      </div>
 
+      <?php
+      $i=0; 
+   }
+
+ }
+ ?>
+</section>
+  <!--blog end-->
   <!-- Section - Event banner start -->
   <section id="event-banner" class="bg-white pull-up">
     <div class="container">
