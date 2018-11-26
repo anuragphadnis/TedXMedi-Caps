@@ -1,4 +1,12 @@
-blog.php<!DOCTYPE html>
+<?php
+  session_start();
+  require_once("pdo.php");
+  if(!isset($_SESSION['user']))
+  {
+    header('Location:login.php');
+  }
+?>
+<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
@@ -50,7 +58,8 @@ blog.php<!DOCTYPE html>
 
   <!-- Color skin -->
   <link rel="stylesheet" href=" res/css/color_red.css">
-
+ <!--blog-->
+  <link rel="stylesheet" href="res/css/blog.css">
   <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 8]>
   <script src=" res/js/modernizr.min.js"></script>
@@ -84,8 +93,8 @@ blog.php<!DOCTYPE html>
             <li><a href="index.html#about" class="line-height-unset">About</a></li>
             <li><a href="speakers.html" class="page-scroll">Speakers</a></li>
             <li><a href="team.html" class="line-height-unset">Our Team</a></li>
-            <li><a href="blog.php" class="line-height-unset">Blogs</a></li>
-            <li><a href="#page-top" class="line-height-unset">Videos</a></li>
+            <li><a href="#page-top" class="line-height-unset">Blogs</a></li>
+            <li><a href="video.html" class="line-height-unset">Videos</a></li>
             <li><a href="sponsors.html" class="line-height-unset">Sponsors</a></li>
 
             <li class="bg-base-color">
@@ -102,11 +111,69 @@ blog.php<!DOCTYPE html>
     <!-- //.container -->
   </nav>
   <!-- //Navigation End -->
-  <section class="blog-section">
-  <center>
-    <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/aparna_mehta_where_do_your_online_returns_go" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
-  </center>
-  </section>
+
+ <!--// blog start-->
+ <section class="blog-section">
+ <?php
+ $query = $pdo->query("SELECT * FROM blog");
+ $i=0;
+ while($blogs = $query->fetch(PDO::FETCH_ASSOC))
+ {
+   if($i==0)
+   {
+     ?>
+     <div class="blog-card">
+        <div class="meta">
+          <div class="photo" style="background-image: url(<?php echo 'uploads/'.$blogs['image'];?>)"></div>
+          <ul class="details">
+            <li class="author"><a href="#"><?php echo $blogs['author']; ?></a></li>
+            <li class="date"><?php echo $blogs['publish_date']; ?></li>
+          </ul>
+        </div>
+        <div class="description">
+          <h1><?php echo $blogs['title']; ?></h1>
+          <p> <?php echo $blogs['description'];?></p>
+          <p class="read-more">
+            <a href="<?php echo 'deleteblog.php?id='.$blogs['uid'];?>">Delete</a>
+          </p>
+          <p class="read-more">
+            <a href="<?php echo 'updateblog.php?id='.$blogs['uid'];?>">Update</a>
+          </p>
+        </div>
+      </div>
+      <?php
+      $i=1;
+   }
+   else {
+      ?>
+      <div class="blog-card alt">
+        <div class="meta">
+          <div class="photo" style="background-image: url(<?php echo 'uploads/'.$blogs['image'];?>)"></div>
+          <ul class="details">
+            <li class="author"><a href="#"><?php echo $blogs['author']; ?></a></li>
+            <li class="date"><?php echo $blogs['publish_date']; ?></li>
+          </ul>
+        </div>
+        <div class="description">
+          <h1><?php echo $blogs['title']; ?></h1>
+          <p> <?php echo $blogs['description'];?></p>
+          <p class="read-more">
+            <a href="<?php echo 'deleteblog.php?id='.$blogs['uid'];?>">Delete</a>
+          </p>
+          <p class="read-more">
+            <a href="<?php echo 'updateblog.php?id='.$blogs['uid'];?>">Update</a>
+          </p>
+        </div>
+      </div>
+
+      <?php
+      $i=0;
+   }
+
+ }
+ ?>
+</section>
+  <!--blog end-->
   <!-- Section - Event banner start -->
   <section id="event-banner" class="bg-white pull-up">
     <div class="container">
@@ -128,7 +195,7 @@ blog.php<!DOCTYPE html>
           <span class="display-block font-family-alt font-weight-700 letter-spacing-1 margin-5 no-margin-bottom no-margin-rl text-large text-uppercase">
             Venue
           </span>
-          <p c lass="margin-3 font-family-alt no-margin-bottom no-margin-rl title-small text-gray-dark-2">
+          <p class="margin-3 font-family-alt no-margin-bottom no-margin-rl title-small text-gray-dark-2">
             Medi-Caps University
           </p>
         </div>
