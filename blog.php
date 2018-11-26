@@ -89,7 +89,7 @@
             <li><a href="speakers.html" class="page-scroll">Speakers</a></li>
             <li><a href="team.html" class="line-height-unset">Our Team</a></li>
             <li><a href="#page-top" class="line-height-unset">Blogs</a></li>
-            <li><a href="video.html" class="line-height-unset">Videos</a></li>
+            <li><a href="video.php" class="line-height-unset">Videos</a></li>
             <li><a href="sponsors.html" class="line-height-unset">Sponsors</a></li>
 
             <li class="bg-base-color">
@@ -156,7 +156,7 @@
       </div>
 
       <?php
-      $i=0; 
+      $i=0;
    }
 
  }

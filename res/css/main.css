@@ -4765,20 +4765,6 @@ section.pull-up {
     line-height: 80px!important;
     padding: 0 15px
   }
-  .navbar.shrink .container {
-    height: 60px
-  }
-  .navbar.shrink .navbar-brand {
-    height: 60px;
-    line-height: 60px!important
-  }
-  .navbar.shrink .navbar-brand img {
-    max-height: 38px;
-    top: 9px
-  }
-  .navbar.shrink .navbar-nav>li {
-    line-height: 60px!important
-  }
 }
 
 @media (min-width:768px) {

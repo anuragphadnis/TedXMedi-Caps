@@ -1,4 +1,9 @@
-blog.php<!DOCTYPE html>
+<?php
+  session_start();
+  require_once("pdo.php");
+  $query = $pdo->query("SELECT * FROM video");
+?>
+<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
@@ -102,11 +107,34 @@ blog.php<!DOCTYPE html>
     <!-- //.container -->
   </nav>
   <!-- //Navigation End -->
-  <section class="blog-section">
+  <!-- Section - Team Start -->
+  <section id="team" class="bg-white">
+    <div class="container">
+      <div class="row no-padding-rl no-padding-top padding-4">
+        <div class="col-md-12">
+          <h2 class="font-family-alt font-weight-700 sm-title-large title-extra-large-2 text-gray-dark-2">
+            <center>Videos</center>
+          </h2>
+          <span class="bg-base-color xs-margin-6 xs-no-margin-rl margin-3 no-margin-rl no-margin-bottom separator-line-extra-thick-full"></span>
+        </div>
+        <!-- //.col-md-10 -->
+      </div>
+      <!-- //.row -->
+  <!-- // vedio  start-->
+
   <center>
-    <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/aparna_mehta_where_do_your_online_returns_go" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+    <?php
+      while($videos=$query->fetch(PDO::FETCH_ASSOC))
+      {
+          echo $videos['code'];?>
+          <br>
+          <a href="deletevideo2.php?id=<?php echo $videos['uid']?>"><button class="btn btn-danger">DELETE</button>
+          <?php
+      }
+    ?>
   </center>
-  </section>
+
+  <!-- // vedio end-->
   <!-- Section - Event banner start -->
   <section id="event-banner" class="bg-white pull-up">
     <div class="container">
