@@ -1899,7 +1899,30 @@ h6 {
 .navbar .navbar-brand img.logo-navbar-white {
   opacity: 0
 }
+@media (max-width:640px) {
+  .pc
+  {
+    visibility: hidden;
+  }
+  .mobile
+  {
+    visibility: visible;
+    width:60%;
+    height: 60%;
+  }
 
+}
+@media (min-width:640px) {
+  .mobile
+  {
+    visibility: hidden;
+  }
+  .pc
+  {
+    visibility: visible;
+  }
+
+}
 .navbar .navbar-toggle {
   border: 1px solid #fff;
   border-radius: 0;
