@@ -117,7 +117,7 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="footer-logo xs-text-center">
-            <img src="res/images/logos/TedXMU_light.jpg" style="width:200; hieght:200" alt="">
+            <img src="res/images/logos/TedXMU_light.png" style="width:200; hieght:200" alt="">
           </div>
           <!-- //.footer-logo -->
           <p class="disclaimer xs-text-center">

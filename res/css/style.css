@@ -644,12 +644,7 @@
 .footer {
   padding: 50px 0 32px;
 }
-.footer-logo {
-  padding-bottom: 25px;
-}
-.footer-logo img {
-  width: 120px;
-}
+
 .footer .disclaimer {
   padding-bottom: 25px;
   font-size: 14px;
