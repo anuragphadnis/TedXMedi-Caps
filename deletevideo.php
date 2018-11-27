@@ -88,18 +88,11 @@
 
         <div id="navbar" class="navbar-collapse collapse col-lg-9 pull-right">
           <ul class="nav navbar-nav font-family-alt letter-spacing-1 text-uppercase font-weight-700">
-            <li><a href="index.html#about" class="line-height-unset">About</a></li>
-            <li><a href="speakers.html" class="page-scroll">Speakers</a></li>
-            <li><a href="team.html" class="line-height-unset">Our Team</a></li>
-            <li><a href="blog.php" class="line-height-unset">Blogs</a></li>
-            <li><a href="#page-top" class="line-height-unset">Videos</a></li>
+            <li><a href="addblog.php" class="line-height-unset">Add Blog</a></li>
+            <li><a href="modifyblog.php" class="line-height-unset">Delete Blog</a></li>
+            <li><a href="addvideo.php" class="line-height-unset">Add Video</a></li>
+            <li><a href="deletevideo.php" class="line-height-unset">Delete Video</a></li>
             <li><a href="sponsors.html" class="line-height-unset">Sponsors</a></li>
-
-            <li class="bg-base-color">
-              <a href="soon.html" class="line-height-unset width-100">
-                Register
-              </a>
-            </li>
           </ul>
         </div>
         <!-- //.navbar-collapse -->

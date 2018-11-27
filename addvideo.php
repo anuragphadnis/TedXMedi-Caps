@@ -120,7 +120,7 @@
         <div id="navbar" class="navbar-collapse collapse col-lg-9 pull-right">
           <ul class="nav navbar-nav font-family-alt letter-spacing-1 text-uppercase font-weight-700">
             <li><a href="addblog.php" class="line-height-unset">Add Blog</a></li>
-            <li><a href="deleteblog.php" class="line-height-unset">Delete Blog</a></li>
+            <li><a href="modifyblog.php" class="line-height-unset">Delete Blog</a></li>
             <li><a href="addvideo.php" class="line-height-unset">Add Video</a></li>
             <li><a href="deletevideo.php" class="line-height-unset">Delete Video</a></li>
             <li><a href="sponsors.html" class="line-height-unset">Sponsors</a></li>
