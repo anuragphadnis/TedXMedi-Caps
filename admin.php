@@ -142,8 +142,7 @@
         <div class="col-sm-8">
           <div class="footer-social text-right">
             <ul class="list-inline list-unstyled no-margin xs-text-center xs-title-small title-medium">
-              <li><a href="https://facebook.com/Tedx-MedicapsUniversity"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="https://twitter.com/TEDx_MU"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.facebook.com/TEDxMedicaps"><i class="fa fa-facebook"></i></a></li>
               <li><a href="https://instagram.com/tedxmedicapsuniversity"><i class="fa fa-instagram"></i></a></li>
             </ul>
             <p class="disclaimer xs-text-center">
