@@ -94,7 +94,7 @@
             <li><a href="blog.php" class="line-height-unset">Blogs</a></li>
             <li><a href="#page-top" class="line-height-unset">Videos</a></li>
             <li><a href="sponsors.html" class="line-height-unset">Sponsors</a></li>
-
+            <li><a href="https://www.surveymonkey.com/r/W29ZXW7" class="line-height-unset">Contact Us</a></li>
             <li class="bg-base-color">
               <a href="soon.html" class="line-height-unset width-100">
                 Register
