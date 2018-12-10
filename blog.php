@@ -268,6 +268,7 @@
             <ul class="list-inline list-unstyled no-margin xs-text-center xs-title-small title-medium">
               <li><a href="https://www.facebook.com/TEDxMedicaps"><i class="fa fa-facebook"></i></a></li>
               <li><a href="https://www.instagram.com/tedxmedicapsuniversity/"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://www.ted.com/tedx/events/29582"><i class="fa fa-external-link"></i></li>
             </ul>
             <p class="disclaimer xs-text-center">
               Website By:<br>Anurag Phadnis<br>Pratik Purohit<br>Aman Shah<br>
