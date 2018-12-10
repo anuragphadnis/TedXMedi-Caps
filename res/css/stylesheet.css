@@ -28,6 +28,11 @@
   .description p, .tab-content div, .speaker p {
 	font-size: 100% !important;
   }
+  .font-about{
+  font-family: "FontAwesome", sans-serif;
+  color: #112C3B;
+	font-weight: 400;
+  }
 
   .speakers-row div.col-md-4 {
 	padding: 5px !important;
@@ -360,4 +365,25 @@ footer h3 {
 	max-width: 200px;
 	margin-right: 20px;
 	float: left;
+}
+
+.nav-tabs {
+	border: 0px;
+}
+
+.nav-tabs a {
+	font-size: 150%;
+	font-weight: 400;
+	color: #aaa !important;
+	border: 0px !important;
+}
+
+.nav-tabs li.active a {
+	background-color: #eee !important;
+	color: #112C3B !important;
+}
+
+.nav-tabs li a:hover {
+	color: #112C3B !important;
+	background-color: #eee !important;
 }
