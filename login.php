@@ -47,19 +47,6 @@
   <meta name="keywords" content="TEDx, MU, Medi-Caps University,Medicaps, Indore, event, talks">
 
   <!-- Social media tags -->
-  <!-- Open Graph -->
-  <meta property="og:title" content="TEDxMU">
-  <meta property="og:description" content="Changing Era. This February, at Medi-Caps University">
-  <meta property="og:image" content="res/images/logos/light-social.jpg">
-  <meta property="og:url" content="https://tedxmedicapsuniversity.com">
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@TEDx_MU">
-  <!-- Google+ -->
-  <meta itemprop="name" content="TEDxMU">
-  <meta itemprop="description" content="Changing Era. This February, at Medi-Caps University.">
-  <meta itemprop="image" content="res/images/logos/light-social.jpg">
-
   <!-- Browser themes -->
   <meta name="theme-color" content="#000">
 

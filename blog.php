@@ -21,19 +21,6 @@
   <meta name="keywords" content="TEDx, JMI, Jamia Millia Islamia, New Delhi, event, talks">
 
   <!-- Social media tags -->
-  <!-- Open Graph -->
-  <meta property="og:title" content="Speakers for TEDxJMI">
-  <meta property="og:description" content="TEDxJMI - Igniting Minds. This October, at Jamia Millia Islamia.">
-  <meta property="og:image" content="https://tedxjmi.com/res/images/logos/light-social.jpg">
-  <meta property="og:url" content="https://tedxjmi.com/our-team">
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@TEDx_JMI">
-  <!-- Google+ -->
-  <meta itemprop="name" content="Speakers for TEDxJMI">
-  <meta itemprop="description" content="TEDxJMI - Igniting Minds. This October, at Jamia Millia Islamia.">
-  <meta itemprop="image" content="https://tedxjmi.com/res/images/logos/light-social.jpg">
-
   <!-- Browser themes -->
   <meta name="theme-color" content="#000">
 
