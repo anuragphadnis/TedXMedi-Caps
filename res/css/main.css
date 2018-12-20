@@ -1891,9 +1891,8 @@ h6 {
 
 .navbar .navbar-brand img {
   display: inline-block;
-  max-height: 250px;
   position: absolute;
-
+  max-width: 320px;
 }
 
 .navbar .navbar-brand img.logo-navbar-white {
@@ -1920,6 +1919,7 @@ h6 {
   .pc
   {
     visibility: visible;
+    height: auto;
   }
 
 }

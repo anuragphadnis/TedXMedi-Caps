@@ -774,3 +774,9 @@
   position: relative;
   z-index: 2;
 }
+
+
+body {
+    text-align: justify;
+    text-justify: inter-word;
+}
