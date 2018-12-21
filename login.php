@@ -47,19 +47,6 @@
   <meta name="keywords" content="TEDx, MU, Medi-Caps University,Medicaps, Indore, event, talks">
 
   <!-- Social media tags -->
-  <!-- Open Graph -->
-  <meta property="og:title" content="TEDxMU">
-  <meta property="og:description" content="Changing Era. This February, at Medi-Caps University">
-  <meta property="og:image" content="res/images/logos/light-social.jpg">
-  <meta property="og:url" content="https://tedxmedicapsuniversity.com">
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@TEDx_MU">
-  <!-- Google+ -->
-  <meta itemprop="name" content="TEDxMU">
-  <meta itemprop="description" content="Changing Era. This February, at Medi-Caps University.">
-  <meta itemprop="image" content="res/images/logos/light-social.jpg">
-
   <!-- Browser themes -->
   <meta name="theme-color" content="#000">
 
@@ -117,7 +104,7 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="footer-logo xs-text-center">
-            <img src="res/images/logos/TedXMU_light.jpg" style="width:200; hieght:200" alt="">
+            <img src="res/images/logos/TedXMU_light.png" style="width:200; hieght:200" alt="">
           </div>
           <!-- //.footer-logo -->
           <p class="disclaimer xs-text-center">
@@ -130,10 +117,13 @@
         <div class="col-sm-8">
           <div class="footer-social text-right">
             <ul class="list-inline list-unstyled no-margin xs-text-center xs-title-small title-medium">
-              <li><a href="https://facebook.com/Tedx-MedicapsUniversity"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="https://twitter.com/TEDx_MU"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.facebook.com/TEDxMedicaps"><i class="fa fa-facebook"></i></a></li>
               <li><a href="https://instagram.com/tedxmedicapsuniversity"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://www.ted.com/tedx/events/29582"><i class="fa fa-external-link"></i></li>
             </ul>
+            <p class="disclaimer xs-text-center">
+              Website By:<br>Anurag Phadnis<br>Pratik Purohit<br>Aman Shah<br>
+            </p>
           </div>
           <!-- //.footer-social -->
         </div>

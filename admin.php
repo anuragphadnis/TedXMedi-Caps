@@ -27,18 +27,6 @@
   <meta name="keywords" content="TEDx, MU, Medi-Caps University,Medicaps, Indore, event, talks">
 
   <!-- Social media tags -->
-  <!-- Open Graph -->
-  <meta property="og:title" content="TEDxMU">
-  <meta property="og:description" content="Changing Era. This February, at Medi-Caps University">
-  <meta property="og:image" content="res/images/logos/light-social.jpg">
-  <meta property="og:url" content="https://tedxmedicapsuniversity.com">
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@TEDx_MU">
-  <!-- Google+ -->
-  <meta itemprop="name" content="TEDxMU">
-  <meta itemprop="description" content="Changing Era. This February, at Medi-Caps University.">
-  <meta itemprop="image" content="res/images/logos/light-social.jpg">
 
   <!-- Browser themes -->
   <meta name="theme-color" content="#000">
@@ -89,8 +77,10 @@
         <div class="navbar-header col-lg-3">
 
           <a class="navbar-brand font-family-alt letter-spacing-1 text-extra-large text-uppercase" href="index.html#page-top">
-            <img class="logo-navbar-dark" src=" res/images/logos/TedXMU_dark.jpg" alt=""/>
-            <img class="logo-navbar-white" src=" res/images/logos/TedXMU_light.jpg" alt=""/>
+            <img class="logo-navbar-dark pc" src="res/images/logos/TedXMU_dark.png" alt="TEDxMU"/>
+            <img class="logo-navbar-white pc"  src="res/images/logos/TedXMU_light.png" alt="TEDxMU"/>
+            <img class="logo-navbar-dark mobile" src="res/images/logos/TedXMU_dark2.png" alt="TEDxMU"/>
+            <img class="logo-navbar-white mobile"  src="res/images/logos/TedXMU_light2.png" alt="TEDxMU"/>
           </a>
 
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
@@ -105,7 +95,7 @@
         <div id="navbar" class="navbar-collapse collapse col-lg-9 pull-right">
           <ul class="nav navbar-nav font-family-alt letter-spacing-1 text-uppercase font-weight-700">
             <li><a href="addblog.php" class="line-height-unset">Add Blog</a></li>
-            <li><a href="deleteblog.php" class="line-height-unset">Delete Blog</a></li>
+            <li><a href="modifyblog.php" class="line-height-unset">Delete Blog</a></li>
             <li><a href="addvideo.php" class="line-height-unset">Add Video</a></li>
             <li><a href="deletevideo.php" class="line-height-unset">Delete Video</a></li>
             <li><a href="sponsors.html" class="line-height-unset">Sponsors</a></li>
@@ -127,7 +117,7 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="footer-logo xs-text-center">
-            <img src="res/images/logos/TedXMU_light.jpg" style="width:200; hieght:200" alt="">
+            <img src="res/images/logos/TedXMU_light.png" style="width:200; hieght:200" alt="">
           </div>
           <!-- //.footer-logo -->
           <p class="disclaimer xs-text-center">
@@ -140,10 +130,12 @@
         <div class="col-sm-8">
           <div class="footer-social text-right">
             <ul class="list-inline list-unstyled no-margin xs-text-center xs-title-small title-medium">
-              <li><a href="https://facebook.com/Tedx-MedicapsUniversity"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="https://twitter.com/TEDx_MU"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.facebook.com/TEDxMedicaps"><i class="fa fa-facebook"></i></a></li>
               <li><a href="https://instagram.com/tedxmedicapsuniversity"><i class="fa fa-instagram"></i></a></li>
             </ul>
+            <p class="disclaimer xs-text-center">
+              Website By:<br>Anurag Phadnis<br>Pratik Purohit<br>Aman Shah<br>
+            </p>
           </div>
           <!-- //.footer-social -->
         </div>

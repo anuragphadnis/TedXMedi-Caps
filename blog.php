@@ -21,19 +21,6 @@
   <meta name="keywords" content="TEDx, JMI, Jamia Millia Islamia, New Delhi, event, talks">
 
   <!-- Social media tags -->
-  <!-- Open Graph -->
-  <meta property="og:title" content="Speakers for TEDxJMI">
-  <meta property="og:description" content="TEDxJMI - Igniting Minds. This October, at Jamia Millia Islamia.">
-  <meta property="og:image" content="https://tedxjmi.com/res/images/logos/light-social.jpg">
-  <meta property="og:url" content="https://tedxjmi.com/our-team">
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@TEDx_JMI">
-  <!-- Google+ -->
-  <meta itemprop="name" content="Speakers for TEDxJMI">
-  <meta itemprop="description" content="TEDxJMI - Igniting Minds. This October, at Jamia Millia Islamia.">
-  <meta itemprop="image" content="https://tedxjmi.com/res/images/logos/light-social.jpg">
-
   <!-- Browser themes -->
   <meta name="theme-color" content="#000">
 
@@ -69,8 +56,10 @@
         <div class="navbar-header col-lg-3">
 
           <a class="navbar-brand font-family-alt letter-spacing-1 text-extra-large text-uppercase" href="index.html#page-top">
-            <img class="logo-navbar-dark" src=" res/images/logos/TedXMU_dark.jpg" alt=""/>
-            <img class="logo-navbar-white" src=" res/images/logos/TedXMU_light.jpg" alt=""/>
+            <img class="logo-navbar-dark pc" src="res/images/logos/TedXMU_dark.png" alt="TEDxMU"/>
+            <img class="logo-navbar-white pc"  src="res/images/logos/TedXMU_light.png" alt="TEDxMU"/>
+            <img class="logo-navbar-dark mobile" src="res/images/logos/TedXMU_dark2.png" alt="TEDxMU"/>
+            <img class="logo-navbar-white mobile"  src="res/images/logos/TedXMU_light2.png" alt="TEDxMU"/>
           </a>
 
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
@@ -91,6 +80,7 @@
             <li><a href="#page-top" class="line-height-unset">Blogs</a></li>
             <li><a href="video.php" class="line-height-unset">Videos</a></li>
             <li><a href="sponsors.html" class="line-height-unset">Sponsors</a></li>
+            <li><a href="contact.html" class="line-height-unset">Contact Us</a></li>
 
             <li class="bg-base-color">
               <a href="soon.html" class="line-height-unset width-100">
@@ -191,7 +181,7 @@
         <!-- //.col-sm-4 -->
 
         <div id="banner-registration" class="col-sm-4 xs-margin-8 xs-no-margin-bottom xs-no-margin-rl text-center">
-          <a href="/res/insider_guide.pdf" class="btn btn-outline-base-color sm-btn-medium btn-large no-margin-rl">
+          <a href="soon.html" class="btn btn-outline-base-color sm-btn-medium btn-large no-margin-rl">
             <span>Download<br>insider guide</span>
           </a>
         </div>
@@ -250,7 +240,7 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="footer-logo xs-text-center">
-            <img src="res/images/logos/TedXMU_light.jpg">
+            <img src="res/images/logos/TedXMU_light.png">
           </div>
           <!-- //.footer-logo -->
           <p class="disclaimer xs-text-center">
@@ -263,10 +253,13 @@
         <div class="col-sm-8">
           <div class="footer-social text-right">
             <ul class="list-inline list-unstyled no-margin xs-text-center xs-title-small title-medium">
-              <li><a href="https://www.facebook.com/TedxMedicapsUniversity/"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="https://twitter.com/TEDx_MU"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.facebook.com/TEDxMedicaps"><i class="fa fa-facebook"></i></a></li>
               <li><a href="https://www.instagram.com/tedxmedicapsuniversity/"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://www.ted.com/tedx/events/29582"><i class="fa fa-external-link"></i></li>
             </ul>
+            <p class="disclaimer xs-text-center">
+              Website By:<br>Anurag Phadnis<br>Pratik Purohit<br>Aman Shah<br>
+            </p>
           </div>
           <!-- //.footer-social -->
         </div>
