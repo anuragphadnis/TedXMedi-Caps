@@ -127,7 +127,7 @@
             Date &amp; Time
           </span>
           <p class="margin-3 font-family-alt no-margin-bottom no-margin-rl title-small text-gray-dark-2">
-            February 15, 2019<br>
+            February 18, 2019<br>
             10 AM to 5 PM
           </p>
         </div>
