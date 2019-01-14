@@ -1,3 +1,4 @@
+
 /* global ScrollMagic, Linear */
 
 (function($){
