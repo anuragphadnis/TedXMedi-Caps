@@ -86,6 +86,7 @@
       new WOW().init();
   </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script src="res/js/bot.js"></script>
 </head>
 
 <body id="page-top">
