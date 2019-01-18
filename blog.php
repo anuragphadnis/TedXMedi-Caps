@@ -260,7 +260,7 @@
               <li><a href="https://www.ted.com/tedx/events/29582"><i class="fa fa-external-link"></i></li>
             </ul>
             <p class="disclaimer xs-text-center">
-              Website By:<br>Anurag Phadnis<br>Pratik Purohit<br>Aman Shah<br>
+              Website By:<br>Anurag Phadnis<br>Prateek Purohit<br>Aman Shah<br>
             </p>
           </div>
           <!-- //.footer-social -->
