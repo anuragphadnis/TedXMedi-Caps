@@ -84,7 +84,7 @@
             <li><a href="sponsors.html" class="line-height-unset">Sponsors</a></li>
             <li><a href="contact.html" class="line-height-unset">Contact Us</a></li>
             <li class="bg-base-color">
-              <a href="soon.html" class="line-height-unset width-100">
+              <a href="pass.html" class="line-height-unset width-100">
                 Register
               </a>
             </li>
